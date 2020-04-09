@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+    <title>Polution Numerique</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-6">
+           <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Expediteur</th>
+            <th scope="col">Objet</th>
+            <th scope="col">Message</th>
+            <th scope="col">suppression</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="michelle">
+            <th scope="row">Michelle</th>
+            <td>diner</td>
+            <td>il est l'heure de venir manger</td>
+            <td><button onclick="deleteMessage('michelle')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+          <tr id="samuel">
+            <th scope="row">Samuel</th>
+            <td>Joyeux anniversaire</td>
+            <td>Je te souhaite un joyeux...</td>
+            <td><button onclick="deleteMessage('samuel')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+          <tr id="gouv">
+            <th scope="row">Gouv.fr</th>
+            <td>Impots</td>
+            <td>Vous avez 5 jours de retard de paiment</td>
+            <td><button onclick="deleteMessage('gouv')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+          <tr id="super">
+            <th scope="row">Supermarche</th>
+            <td>pub</td>
+            <td>acheter tout ce que vous pouvez</td>
+            <td><button onclick="deleteMessage('super')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="insta">
+            <th scope="row">Instagram</th>
+            <td>Ajout d'ami</td>
+            <td>Quelqu'un veut vous ajouter en ami</td>
+            <td><button onclick="deleteMessage('insta')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="green">
+            <th scope="row">Ecologie</th>
+            <td>Green</td>
+            <td>Tout pour moins polluer</td>
+            <td><button onclick="deleteMessage('green')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="amazon">
+            <th scope="row">Amazon</th>
+            <td>Commande</td>
+            <td>Votre commande a ete expedier</td>
+            <td><button onclick="deleteMessage('amazon')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="open">
+            <th scope="row">OpenClassrooms</th>
+            <td>Cours</td>
+            <td>Reprenez le cours que vous avez commencer</td>
+            <td><button onclick="deleteMessage('open')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="tel">
+            <th scope="row">Telephonique</th>
+            <td>Nouveau forfait</td>
+            <td>Prenez un nouveau forfait moins chere que chez la concurence</td>
+            <td><button onclick="deleteMessage('tel')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="google">
+            <th scope="row">Google</th>
+            <td>Alerte securite</td>
+            <td>Connexion non identifier sur votre compte google</td>
+            <td><button onclick="deleteMessage('google')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        <tr id="banque">
+            <th scope="row">Banque</th>
+            <td>relever de compte</td>
+            <td>Vos relevez de compte son disponible sur votre espace personnel</td>
+            <td><button onclick="deleteMessage('banque')"><img src="trash.png" class="trash"></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-6">
+      <img src="ciel.jpg" id="ciel">
+    </div>
+  </div>
+</body>
+</html>
